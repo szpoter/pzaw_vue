@@ -6,11 +6,11 @@
       <input v-model="loginPass" type="password" placeholder="Password" required />
       <button type="submit">Login</button>
     </form>
-    <h2>Register</h2>
+    <h2>Zarejestruj się</h2>
     <form @submit.prevent="register">
       <input v-model="regUser" placeholder="Username" required />
       <input v-model="regPass" type="password" placeholder="Password" required />
-      <button type="submit">Register</button>
+      <button type="submit">zatwierdź</button>
     </form>
     <div v-if="error" style="color:red">{{ error }}</div>
   </div>
@@ -44,8 +44,4 @@ function register() {
   router.push('/offers') // <-- zmiana tutaj
 }
 </script>
-<style scoped>
-.centered { max-width: 300px; margin: 100px auto; }
-input { display: block; margin: 8px 0; width: 100%; }
-button { width: 100%; }
-</style>
+<style src="@/assets/form.css"></style>

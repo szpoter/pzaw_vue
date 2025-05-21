@@ -16,3 +16,4 @@ import Cart from '../components/Cart.vue'
 const store = inject('store')
 const activeTab = computed(() => store.state.activeTab)
 </script>
+<style src="@/assets/form.css"></style>

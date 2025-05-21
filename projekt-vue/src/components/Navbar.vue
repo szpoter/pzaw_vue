@@ -1,11 +1,11 @@
 <template>
   <nav class="navbar">
-    <button @click="setTab('offers')">Offers</button>
-    <button @click="setTab('search')">Search for product</button>
-    <button @click="setTab('cart')">Cart ({{ cartCount }})</button>
+    <button @click="setTab('offers')">Rybki</button>
+    <button @click="setTab('search')">Wyszukaj rybkę</button>
+    <button @click="setTab('cart')">Koszyk ({{ cartCount }})</button>
     <span style="flex:1"></span>
-    <span v-if="user">Hello, {{ user.username }}</span>
-    <button @click="logout" v-if="user">Logout</button>
+    <span v-if="user">Cześć, {{ user.username }}</span>
+    <button @click="logout" v-if="user">Wyloguj</button>
   </nav>
 </template>
 <script setup>

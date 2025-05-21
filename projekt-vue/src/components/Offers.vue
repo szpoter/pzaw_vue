@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h2>Offers</h2>
+    <h2>Rybki</h2>
     <div v-for="offer in offers" :key="offer.id" class="offer">
-      <b>{{ offer.name }}</b> - {{ offer.price }} PLN
+      <b>{{ offer.name }}</b> - {{ offer.price }} zł/kg
       <input type="number" v-model.number="quantities[offer.id]" min="1" style="width:60px" />
-      <button @click="add(offer)">Add to cart</button>
+      <button class="small-btn" @click="add(offer)">Dodaj do koszyka</button>
     </div>
   </div>
 </template>
@@ -18,6 +18,4 @@ function add(offer) {
   store.addToCart(offer, quantities[offer.id] || 1)
 }
 </script>
-<style scoped>
-.offer { margin-bottom: 1rem; }
-</style>
+<style src="@/assets/form.css"></style>

@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h2>Cart</h2>
-    <div v-if="cart.length === 0">Cart is empty.</div>
+    <h2>Koszyk</h2>
+    <div v-if="cart.length === 0">Koszyk jest pusty.</div>
     <div v-for="item in cart" :key="item.id" class="cart-item">
       <b>{{ item.name }}</b> x {{ item.quantity }} = {{ item.price * item.quantity }} PLN
-      <button @click="remove(item.id)">Remove</button>
+      <button class="delete-btn" @click="remove(item.id)">Usuń</button>
     </div>
     <div v-if="cart.length > 0">
-      <b>Total: {{ total }} PLN</b>
+      <strong><b>Razem: {{ total }} PLN</b></strong>
     </div>
   </div>
 </template>
@@ -20,6 +20,4 @@ function remove(id) {
   store.removeFromCart(id)
 }
 </script>
-<style scoped>
-.cart-item { margin-bottom: 1rem; }
-</style>
+<style src="@/assets/form.css"></style>

@@ -1,10 +1,13 @@
 import { reactive } from 'vue'
 
 const offers = [
-  { id: 1, name: 'Laptop', price: 3000 },
-  { id: 2, name: 'Smartphone', price: 1500 },
-  { id: 3, name: 'Headphones', price: 200 },
-  { id: 4, name: 'Keyboard', price: 100 }
+  { id: 1, name: 'Karp', price: 10, unit: 'zł/kg' },
+  { id: 2, name: 'Szczupak', price: 30, unit: 'zł/kg' },
+  { id: 3, name: 'Okoń', price: 35, unit: 'zł/kg' },
+  { id: 4, name: 'Sandacz', price: 40, unit: 'zł/kg' },
+  { id: 5, name: 'Leszcz', price: 5, unit: 'zł/kg' },
+  { id: 6, name: 'Płoć', price: 4, unit: 'zł/kg' },
+  { id: 7, name: 'Polski łosoś', price: 120, unit: 'zł/kg' }
 ]
 
 const store = {

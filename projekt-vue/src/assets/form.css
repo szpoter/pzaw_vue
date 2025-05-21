@@ -1,0 +1,125 @@
+.centered {
+  max-width: 320px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  background: #f8f8fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0001;
+  padding: 2rem 2.5rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  background: #2a7ae2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #185fa7;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 0.98rem;
+  margin-top: 0.5rem;
+}
+
+.small-btn {
+  width: 5%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  background: #2ecc71;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 30px;
+  height: 60px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.small-btn:hover {
+  background: #0a5027;
+}
+
+.search-btn {
+  width: 5%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  background: #4466df;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 30px;
+  height: 60px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.search-btn:hover {
+  background: #2d0553;
+}
+
+.linijka {
+    width: 40%;
+    margin-right: 50px;
+    height: 60px;
+}
+
+.delete-btn{
+      width: 5%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  background: #de2626;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 30px;
+  height: 60px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.delete-btn:hover {
+  background: #5f0404;
+}
+
+strong{
+    font-size: x-large;
+}
